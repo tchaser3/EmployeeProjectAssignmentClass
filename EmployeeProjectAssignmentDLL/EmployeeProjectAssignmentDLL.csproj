@@ -79,6 +79,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindEmployeeTaskHoursByEmployeeIDDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindEmployeeTaskTotalHoursDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindEmployeeTaskTotalHoursDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindLaborHoursByDateRangeDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -199,6 +204,17 @@
     </None>
     <None Include="FindEmployeeTaskHoursByEmployeeIDDataSet.xss">
       <DependentUpon>FindEmployeeTaskHoursByEmployeeIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeTaskTotalHoursDataSet.xsc">
+      <DependentUpon>FindEmployeeTaskTotalHoursDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeTaskTotalHoursDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindEmployeeTaskTotalHoursDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindEmployeeTaskTotalHoursDataSet.xss">
+      <DependentUpon>FindEmployeeTaskTotalHoursDataSet.xsd</DependentUpon>
     </None>
     <None Include="FindLaborHoursByDateRangeDataSet.xsc">
       <DependentUpon>FindLaborHoursByDateRangeDataSet.xsd</DependentUpon>

@@ -56,6 +56,24 @@ namespace EmployeeProjectAssignmentDLL
         FindEmployeeProductionHoursOverPayPeriodDataSet aFindEmployeeProductionHoursOverPayPeriodDataSet;
         FindEmployeeProductionHoursOverPayPeriodDataSetTableAdapters.FindEmployeeProductionHoursOverPayPeriodTableAdapter aFindEmployeeProductionHoursOverPayPeriodTableAdapter;
 
+        FindEmployeeTaskTotalHoursDataSet aFindEmployeeTaskTotalHoursDataSet;
+        FindEmployeeTaskTotalHoursDataSetTableAdapters.FindEmployeeTaskTotalHoursTableAdapter aFindEmployeeTaskTotalHoursTableAdapter;
+
+        public FindEmployeeTaskTotalHoursDataSet FindEmployeeTaskTotalHours(int intEmployeeID, DateTime datStartDate, DateTime datEndDate)
+        {
+            try
+            {
+                aFindEmployeeTaskTotalHoursDataSet = new FindEmployeeTaskTotalHoursDataSet();
+                aFindEmployeeTaskTotalHoursTableAdapter = new FindEmployeeTaskTotalHoursDataSetTableAdapters.FindEmployeeTaskTotalHoursTableAdapter();
+                aFindEmployeeTaskTotalHoursTableAdapter.Fill(aFindEmployeeTaskTotalHoursDataSet.FindEmployeeTaskTotalHours, intEmployeeID, datStartDate, datEndDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Project Assignment Class // Find Employee Task Total Hours " + Ex.Message);
+            }
+
+            return aFindEmployeeTaskTotalHoursDataSet;
+        }
         public FindEmployeeProductionHoursOverPayPeriodDataSet FindEmployeeProductionHoursOverPayPeriodDataSet(int intEmployeeID, DateTime datStartDate, DateTime datEndDate)
         {
             try
