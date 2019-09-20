@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A8B9410-9647-4B9C-A948-3C74896F02B0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EmployeeProjectAssignmentDLL</RootNamespace>
+    <AssemblyName>EmployeeProjectAssignmentDLL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NewEventLogDLL">
+      <HintPath>..\..\Blue Jay Class Library\NewEventLogDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EmployeeProjectAssignmentClass.cs" />
+    <Compile Include="EmployeeProjectAssignmentDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeProjectAssignmentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindEmployeeHoursOverDateRangeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindEmployeeHoursOverDateRangeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindEmployeeLaborByTransactionIDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindEmployeeLaborByTransactionIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindEmployeeProductionHoursOverPayPeriodDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindEmployeeProductionHoursOverPayPeriodDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindEmployeeProjectAssignmentByTaskIDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindEmployeeProjectAssignmentByTaskIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindEmployeeProjectHoursOverDateRangeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindEmployeeProjectHoursOverDateRangeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindEmployeeTaskHoursByEmployeeIDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindEmployeeTaskHoursByEmployeeIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindLaborHoursByDateRangeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindLaborHoursByDateRangeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindProjectHoursDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindProjectHoursDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindProjectHoursSpecificDateAndEmployeeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindProjectHoursSpecificDateAndEmployeeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InsertEmployeeProjectAssignmentEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsertEmployeeProjectAssignmentEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateEmployeeLaborHoursEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateEmployeeLaborHoursEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateEmployeeProjectAssignmentEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateEmployeeProjectAssignmentEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateEmployeeProjectAssignmentTaskIDEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateEmployeeProjectAssignmentTaskIDEntry.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="EmployeeProjectAssignmentDataSet.xsc">
+      <DependentUpon>EmployeeProjectAssignmentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeProjectAssignmentDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeProjectAssignmentDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeProjectAssignmentDataSet.xss">
+      <DependentUpon>EmployeeProjectAssignmentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeHoursOverDateRangeDataSet.xsc">
+      <DependentUpon>FindEmployeeHoursOverDateRangeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeHoursOverDateRangeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindEmployeeHoursOverDateRangeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindEmployeeHoursOverDateRangeDataSet.xss">
+      <DependentUpon>FindEmployeeHoursOverDateRangeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeLaborByTransactionIDDataSet.xsc">
+      <DependentUpon>FindEmployeeLaborByTransactionIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeLaborByTransactionIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindEmployeeLaborByTransactionIDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindEmployeeLaborByTransactionIDDataSet.xss">
+      <DependentUpon>FindEmployeeLaborByTransactionIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeProductionHoursOverPayPeriodDataSet.xsc">
+      <DependentUpon>FindEmployeeProductionHoursOverPayPeriodDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeProductionHoursOverPayPeriodDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindEmployeeProductionHoursOverPayPeriodDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindEmployeeProductionHoursOverPayPeriodDataSet.xss">
+      <DependentUpon>FindEmployeeProductionHoursOverPayPeriodDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeProjectAssignmentByTaskIDDataSet.xsc">
+      <DependentUpon>FindEmployeeProjectAssignmentByTaskIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeProjectAssignmentByTaskIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindEmployeeProjectAssignmentByTaskIDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindEmployeeProjectAssignmentByTaskIDDataSet.xss">
+      <DependentUpon>FindEmployeeProjectAssignmentByTaskIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeProjectHoursOverDateRangeDataSet.xsc">
+      <DependentUpon>FindEmployeeProjectHoursOverDateRangeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeProjectHoursOverDateRangeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindEmployeeProjectHoursOverDateRangeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindEmployeeProjectHoursOverDateRangeDataSet.xss">
+      <DependentUpon>FindEmployeeProjectHoursOverDateRangeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeTaskHoursByEmployeeIDDataSet.xsc">
+      <DependentUpon>FindEmployeeTaskHoursByEmployeeIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeTaskHoursByEmployeeIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindEmployeeTaskHoursByEmployeeIDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindEmployeeTaskHoursByEmployeeIDDataSet.xss">
+      <DependentUpon>FindEmployeeTaskHoursByEmployeeIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindLaborHoursByDateRangeDataSet.xsc">
+      <DependentUpon>FindLaborHoursByDateRangeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindLaborHoursByDateRangeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindLaborHoursByDateRangeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindLaborHoursByDateRangeDataSet.xss">
+      <DependentUpon>FindLaborHoursByDateRangeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProjectHoursDataSet.xsc">
+      <DependentUpon>FindProjectHoursDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProjectHoursDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindProjectHoursDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindProjectHoursDataSet.xss">
+      <DependentUpon>FindProjectHoursDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProjectHoursSpecificDateAndEmployeeDataSet.xsc">
+      <DependentUpon>FindProjectHoursSpecificDateAndEmployeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProjectHoursSpecificDateAndEmployeeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindProjectHoursSpecificDateAndEmployeeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindProjectHoursSpecificDateAndEmployeeDataSet.xss">
+      <DependentUpon>FindProjectHoursSpecificDateAndEmployeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InsertEmployeeProjectAssignmentEntry.xsc">
+      <DependentUpon>InsertEmployeeProjectAssignmentEntry.xsd</DependentUpon>
+    </None>
+    <None Include="InsertEmployeeProjectAssignmentEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InsertEmployeeProjectAssignmentEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InsertEmployeeProjectAssignmentEntry.xss">
+      <DependentUpon>InsertEmployeeProjectAssignmentEntry.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UpdateEmployeeLaborHoursEntry.xsc">
+      <DependentUpon>UpdateEmployeeLaborHoursEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateEmployeeLaborHoursEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateEmployeeLaborHoursEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateEmployeeLaborHoursEntry.xss">
+      <DependentUpon>UpdateEmployeeLaborHoursEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateEmployeeProjectAssignmentEntry.xsc">
+      <DependentUpon>UpdateEmployeeProjectAssignmentEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateEmployeeProjectAssignmentEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateEmployeeProjectAssignmentEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateEmployeeProjectAssignmentEntry.xss">
+      <DependentUpon>UpdateEmployeeProjectAssignmentEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateEmployeeProjectAssignmentTaskIDEntry.xsc">
+      <DependentUpon>UpdateEmployeeProjectAssignmentTaskIDEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateEmployeeProjectAssignmentTaskIDEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateEmployeeProjectAssignmentTaskIDEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateEmployeeProjectAssignmentTaskIDEntry.xss">
+      <DependentUpon>UpdateEmployeeProjectAssignmentTaskIDEntry.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
