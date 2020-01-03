@@ -59,6 +59,74 @@ namespace EmployeeProjectAssignmentDLL
         FindEmployeeTaskTotalHoursDataSet aFindEmployeeTaskTotalHoursDataSet;
         FindEmployeeTaskTotalHoursDataSetTableAdapters.FindEmployeeTaskTotalHoursTableAdapter aFindEmployeeTaskTotalHoursTableAdapter;
 
+        ProductivityNotCorrectDataSet aProductivityNotCorrectDataSet;
+        ProductivityNotCorrectDataSetTableAdapters.productivitynotcorrectTableAdapter aProductivityNotCorrectTableAdapter;
+
+        InsertProductivityNotCorrectEntryTableAdapters.QueriesTableAdapter aInsertProductivityNotCorrectTableAdapter;
+
+        FindProductivityNotCorrectDataSet aFindProductivityNotCorrectDataSet;
+        FindProductivityNotCorrectDataSetTableAdapters.FindProductivityNotCorrectTableAdapter aFindProductivityNotCorrectTableAdapter;
+
+        public FindProductivityNotCorrectDataSet FindProductivityNotCorrect(DateTime datStartDate, DateTime datEndDate)
+        {
+            try
+            {
+                aFindProductivityNotCorrectDataSet = new FindProductivityNotCorrectDataSet();
+                aFindProductivityNotCorrectTableAdapter = new FindProductivityNotCorrectDataSetTableAdapters.FindProductivityNotCorrectTableAdapter();
+                aFindProductivityNotCorrectTableAdapter.Fill(aFindProductivityNotCorrectDataSet.FindProductivityNotCorrect, datStartDate, datEndDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Project Assignment Class // Find Productivity Not Correct " + Ex.Message);
+            } 
+
+            return aFindProductivityNotCorrectDataSet;
+        }
+        public bool InsertProductivityNotCorrect(int intEmployeeID, DateTime datTransactionDate)
+        {
+            bool blnFatalError = false;
+
+            try
+            {
+                aInsertProductivityNotCorrectTableAdapter = new InsertProductivityNotCorrectEntryTableAdapters.QueriesTableAdapter();
+                aInsertProductivityNotCorrectTableAdapter.InsertProductivityNotCorrect(intEmployeeID, datTransactionDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Project Assignment Class // Insert Productivity Not Correct " + Ex.Message);
+
+                blnFatalError = true;
+            }
+
+            return blnFatalError;
+        }
+        public ProductivityNotCorrectDataSet GetProductivityNotCorrectInfo()
+        {
+            try
+            {
+                aProductivityNotCorrectDataSet = new ProductivityNotCorrectDataSet();
+                aProductivityNotCorrectTableAdapter = new ProductivityNotCorrectDataSetTableAdapters.productivitynotcorrectTableAdapter();
+                aProductivityNotCorrectTableAdapter.Fill(aProductivityNotCorrectDataSet.productivitynotcorrect);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Project Assignment Class // Get Productivity Not Correct Info " + Ex.Message);
+            }
+
+            return aProductivityNotCorrectDataSet;
+        }
+        public void UpdateProductivityNotCorrectDB(ProductivityNotCorrectDataSet aProductivityNotCorrectDataSet)
+        {
+            try
+            {
+                aProductivityNotCorrectTableAdapter = new ProductivityNotCorrectDataSetTableAdapters.productivitynotcorrectTableAdapter();
+                aProductivityNotCorrectTableAdapter.Update(aProductivityNotCorrectDataSet.productivitynotcorrect);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Project Assignment Class // Update Productivity Not Correct DB " + Ex.Message);
+            }
+        }
         public FindEmployeeTaskTotalHoursDataSet FindEmployeeTaskTotalHours(int intEmployeeID, DateTime datStartDate, DateTime datEndDate)
         {
             try
