@@ -67,6 +67,24 @@ namespace EmployeeProjectAssignmentDLL
         FindProductivityNotCorrectDataSet aFindProductivityNotCorrectDataSet;
         FindProductivityNotCorrectDataSetTableAdapters.FindProductivityNotCorrectTableAdapter aFindProductivityNotCorrectTableAdapter;
 
+        FindProductivityManagersForEmailDataSet aFindProductivityManagersForEmailDataSet;
+        FindProductivityManagersForEmailDataSetTableAdapters.FindProductivityManagersForEmailTableAdapter aFindProductivityManagersForEmailTableAdapter;
+
+        public FindProductivityManagersForEmailDataSet FindProductivityManagersForEmail()
+        {
+            try
+            {
+                aFindProductivityManagersForEmailDataSet = new FindProductivityManagersForEmailDataSet();
+                aFindProductivityManagersForEmailTableAdapter = new FindProductivityManagersForEmailDataSetTableAdapters.FindProductivityManagersForEmailTableAdapter();
+                aFindProductivityManagersForEmailTableAdapter.Fill(aFindProductivityManagersForEmailDataSet.FindProductivityManagersForEmail);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Project Assignment Class // Find Productivity Managers For Email " + Ex.Message);
+            }
+
+            return aFindProductivityManagersForEmailDataSet;
+        }
         public FindProductivityNotCorrectDataSet FindProductivityNotCorrect(DateTime datStartDate, DateTime datEndDate)
         {
             try

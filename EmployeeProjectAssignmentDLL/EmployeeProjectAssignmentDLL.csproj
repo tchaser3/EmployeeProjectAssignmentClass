@@ -89,6 +89,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindLaborHoursByDateRangeDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindProductivityManagersForEmailDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindProductivityManagersForEmailDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindProductivityNotCorrectDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -241,6 +246,17 @@
     </None>
     <None Include="FindLaborHoursByDateRangeDataSet.xss">
       <DependentUpon>FindLaborHoursByDateRangeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProductivityManagersForEmailDataSet.xsc">
+      <DependentUpon>FindProductivityManagersForEmailDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProductivityManagersForEmailDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindProductivityManagersForEmailDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindProductivityManagersForEmailDataSet.xss">
+      <DependentUpon>FindProductivityManagersForEmailDataSet.xsd</DependentUpon>
     </None>
     <None Include="FindProductivityNotCorrectDataSet.xsc">
       <DependentUpon>FindProductivityNotCorrectDataSet.xsd</DependentUpon>
