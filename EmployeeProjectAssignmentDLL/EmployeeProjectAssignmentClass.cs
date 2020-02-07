@@ -70,6 +70,24 @@ namespace EmployeeProjectAssignmentDLL
         FindProductivityManagersForEmailDataSet aFindProductivityManagersForEmailDataSet;
         FindProductivityManagersForEmailDataSetTableAdapters.FindProductivityManagersForEmailTableAdapter aFindProductivityManagersForEmailTableAdapter;
 
+        FindProjectHoursTotalDataSet aFindProjectHoursTotalDataSet;
+        FindProjectHoursTotalDataSetTableAdapters.FindProjectHourTotalsTableAdapter aFindProjectHoursTotalTableAdapter;
+
+        public FindProjectHoursTotalDataSet FindProjectHoursTotal(int intProjectID)
+        {
+            try
+            {
+                aFindProjectHoursTotalDataSet = new FindProjectHoursTotalDataSet();
+                aFindProjectHoursTotalTableAdapter = new FindProjectHoursTotalDataSetTableAdapters.FindProjectHourTotalsTableAdapter();
+                aFindProjectHoursTotalTableAdapter.Fill(aFindProjectHoursTotalDataSet.FindProjectHourTotals, intProjectID);
+            }
+            catch(Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Project Assignment // Find Project Total Hours " + Ex.Message);
+            }
+
+            return aFindProjectHoursTotalDataSet;
+        }
         public FindProductivityManagersForEmailDataSet FindProductivityManagersForEmail()
         {
             try

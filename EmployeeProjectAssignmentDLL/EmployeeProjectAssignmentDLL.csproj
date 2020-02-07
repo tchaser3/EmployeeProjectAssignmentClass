@@ -109,6 +109,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindProjectHoursSpecificDateAndEmployeeDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindProjectHoursTotalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindProjectHoursTotalDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="InsertEmployeeProjectAssignmentEntry.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -290,6 +295,17 @@
     </None>
     <None Include="FindProjectHoursSpecificDateAndEmployeeDataSet.xss">
       <DependentUpon>FindProjectHoursSpecificDateAndEmployeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProjectHoursTotalDataSet.xsc">
+      <DependentUpon>FindProjectHoursTotalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProjectHoursTotalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindProjectHoursTotalDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindProjectHoursTotalDataSet.xss">
+      <DependentUpon>FindProjectHoursTotalDataSet.xsd</DependentUpon>
     </None>
     <None Include="InsertEmployeeProjectAssignmentEntry.xsc">
       <DependentUpon>InsertEmployeeProjectAssignmentEntry.xsd</DependentUpon>
