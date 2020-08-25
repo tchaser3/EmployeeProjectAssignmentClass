@@ -73,6 +73,24 @@ namespace EmployeeProjectAssignmentDLL
         FindProjectHoursTotalDataSet aFindProjectHoursTotalDataSet;
         FindProjectHoursTotalDataSetTableAdapters.FindProjectHourTotalsTableAdapter aFindProjectHoursTotalTableAdapter;
 
+        FindAllProjectProductivityCostsOverDateRangeDataSet aFindAllProjectProductivityCostsOverDateRangeDataSet;
+        FindAllProjectProductivityCostsOverDateRangeDataSetTableAdapters.FindAllProjectProductivityCostsOverDateRangeTableAdapter aFindAllProjectProductivityCostsOverDateRangeTableAdapter;
+
+        public FindAllProjectProductivityCostsOverDateRangeDataSet FindAllProjectProductivityCostsOverDateRange(DateTime datStartDate, DateTime datEndDate)
+        {
+            try
+            {
+                aFindAllProjectProductivityCostsOverDateRangeDataSet = new FindAllProjectProductivityCostsOverDateRangeDataSet();
+                aFindAllProjectProductivityCostsOverDateRangeTableAdapter = new FindAllProjectProductivityCostsOverDateRangeDataSetTableAdapters.FindAllProjectProductivityCostsOverDateRangeTableAdapter();
+                aFindAllProjectProductivityCostsOverDateRangeTableAdapter.Fill(aFindAllProjectProductivityCostsOverDateRangeDataSet.FindAllProjectProductivityCostsOverDateRange, datStartDate, datEndDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Project Assignement Class // Find All Project Productivity Costs Over Date Range " + Ex.Message);
+            }
+
+            return aFindAllProjectProductivityCostsOverDateRangeDataSet;
+        }
         public FindProjectHoursTotalDataSet FindProjectHoursTotal(int intProjectID)
         {
             try

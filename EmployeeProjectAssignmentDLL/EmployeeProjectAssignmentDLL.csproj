@@ -49,6 +49,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EmployeeProjectAssignmentDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindAllProjectProductivityCostsOverDateRangeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindAllProjectProductivityCostsOverDateRangeDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindEmployeeHoursOverDateRangeDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -163,6 +168,17 @@
     </None>
     <None Include="EmployeeProjectAssignmentDataSet.xss">
       <DependentUpon>EmployeeProjectAssignmentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindAllProjectProductivityCostsOverDateRangeDataSet.xsc">
+      <DependentUpon>FindAllProjectProductivityCostsOverDateRangeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindAllProjectProductivityCostsOverDateRangeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindAllProjectProductivityCostsOverDateRangeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindAllProjectProductivityCostsOverDateRangeDataSet.xss">
+      <DependentUpon>FindAllProjectProductivityCostsOverDateRangeDataSet.xsd</DependentUpon>
     </None>
     <None Include="FindEmployeeHoursOverDateRangeDataSet.xsc">
       <DependentUpon>FindEmployeeHoursOverDateRangeDataSet.xsd</DependentUpon>
