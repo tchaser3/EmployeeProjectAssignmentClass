@@ -76,6 +76,24 @@ namespace EmployeeProjectAssignmentDLL
         FindAllProjectProductivityCostsOverDateRangeDataSet aFindAllProjectProductivityCostsOverDateRangeDataSet;
         FindAllProjectProductivityCostsOverDateRangeDataSetTableAdapters.FindAllProjectProductivityCostsOverDateRangeTableAdapter aFindAllProjectProductivityCostsOverDateRangeTableAdapter;
 
+        FindAllEmployeeProductionOverAWeekDataSet aFindAllEmployeeProductionOverAWeekDataSet;
+        FindAllEmployeeProductionOverAWeekDataSetTableAdapters.FindAllEmployeeProductionOverAWeekTableAdapter aFindAllEmployeeProductionOverAWeekTableAdapter;
+
+        public FindAllEmployeeProductionOverAWeekDataSet FindAllEmployeeProductionOverAWeek(DateTime datStartDate, DateTime datEndDate)
+        {
+            try
+            {
+                aFindAllEmployeeProductionOverAWeekDataSet = new FindAllEmployeeProductionOverAWeekDataSet();
+                aFindAllEmployeeProductionOverAWeekTableAdapter = new FindAllEmployeeProductionOverAWeekDataSetTableAdapters.FindAllEmployeeProductionOverAWeekTableAdapter();
+                aFindAllEmployeeProductionOverAWeekTableAdapter.Fill(aFindAllEmployeeProductionOverAWeekDataSet.FindAllEmployeeProductionOverAWeek, datStartDate, datEndDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Project Assignment // Find All Employee Production Over a Week " + Ex.Message);
+            }
+
+            return aFindAllEmployeeProductionOverAWeekDataSet;
+        }
         public FindAllProjectProductivityCostsOverDateRangeDataSet FindAllProjectProductivityCostsOverDateRange(DateTime datStartDate, DateTime datEndDate)
         {
             try
