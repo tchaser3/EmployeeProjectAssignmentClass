@@ -79,6 +79,24 @@ namespace EmployeeProjectAssignmentDLL
         FindAllEmployeeProductionOverAWeekDataSet aFindAllEmployeeProductionOverAWeekDataSet;
         FindAllEmployeeProductionOverAWeekDataSetTableAdapters.FindAllEmployeeProductionOverAWeekTableAdapter aFindAllEmployeeProductionOverAWeekTableAdapter;
 
+        FindProjectHoursAboveLimitDataSet aFindProjectHoursAboveLimitDataSet;
+        FindProjectHoursAboveLimitDataSetTableAdapters.FindProjectHoursAboveLimitTableAdapter aFindProjectHoursAboveLimitTableAdapter;
+
+        public FindProjectHoursAboveLimitDataSet FindProjectHoursAboveLimit(int intProjectID, DateTime datStartDate, decimal decUpperLimit)
+        {
+            try
+            {
+                aFindProjectHoursAboveLimitDataSet = new FindProjectHoursAboveLimitDataSet();
+                aFindProjectHoursAboveLimitTableAdapter = new FindProjectHoursAboveLimitDataSetTableAdapters.FindProjectHoursAboveLimitTableAdapter();
+                aFindProjectHoursAboveLimitTableAdapter.Fill(aFindProjectHoursAboveLimitDataSet.FindProjectHoursAboveLimit, intProjectID, datStartDate, decUpperLimit);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Project Assignement Class // Find Project Hours Above Limit " + Ex.Message);
+            }
+
+            return aFindProjectHoursAboveLimitDataSet;
+        }
         public FindAllEmployeeProductionOverAWeekDataSet FindAllEmployeeProductionOverAWeek(DateTime datStartDate, DateTime datEndDate)
         {
             try
