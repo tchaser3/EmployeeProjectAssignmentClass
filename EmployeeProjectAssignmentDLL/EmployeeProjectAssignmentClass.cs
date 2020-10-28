@@ -355,13 +355,13 @@ namespace EmployeeProjectAssignmentDLL
 
             return aFindLaborHoursByDateRangeDataSet;
         }
-        public FindProjectHoursDataSet FindProjectHours(int intProjectID)
+        public FindProjectHoursDataSet FindProjectHours(int intProjectID, DateTime datStartDate)
         {
             try
             {
                 aFindProjectHoursDataSet = new FindProjectHoursDataSet();
                 aFindProjectHoursTableAdapter = new FindProjectHoursDataSetTableAdapters.FindProjectHoursTableAdapter();
-                aFindProjectHoursTableAdapter.Fill(aFindProjectHoursDataSet.FindProjectHours, intProjectID);
+                aFindProjectHoursTableAdapter.Fill(aFindProjectHoursDataSet.FindProjectHours, intProjectID, datStartDate);
             }
             catch (Exception Ex)
             {
