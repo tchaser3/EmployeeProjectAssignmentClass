@@ -29,6 +29,7 @@
               <Mapping SourceColumn="FirstName" DataSetColumn="FirstName" />
               <Mapping SourceColumn="LastName" DataSetColumn="LastName" />
               <Mapping SourceColumn="ProjectID" DataSetColumn="ProjectID" />
+              <Mapping SourceColumn="CustomerAssignedID" DataSetColumn="CustomerAssignedID" />
               <Mapping SourceColumn="AssignedProjectID" DataSetColumn="AssignedProjectID" />
               <Mapping SourceColumn="ProjectName" DataSetColumn="ProjectName" />
               <Mapping SourceColumn="TotalHours" DataSetColumn="TotalHours" />
@@ -65,6 +66,13 @@
                 </xs:simpleType>
               </xs:element>
               <xs:element name="ProjectID" msprop:Generator_ColumnVarNameInTable="columnProjectID" msprop:Generator_ColumnPropNameInRow="ProjectID" msprop:Generator_ColumnPropNameInTable="ProjectIDColumn" msprop:Generator_UserColumnName="ProjectID" type="xs:int" />
+              <xs:element name="CustomerAssignedID" msprop:Generator_ColumnVarNameInTable="columnCustomerAssignedID" msprop:Generator_ColumnPropNameInRow="CustomerAssignedID" msprop:Generator_ColumnPropNameInTable="CustomerAssignedIDColumn" msprop:Generator_UserColumnName="CustomerAssignedID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
               <xs:element name="AssignedProjectID" msprop:Generator_ColumnVarNameInTable="columnAssignedProjectID" msprop:Generator_ColumnPropNameInRow="AssignedProjectID" msprop:Generator_ColumnPropNameInTable="AssignedProjectIDColumn" msprop:Generator_UserColumnName="AssignedProjectID">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">

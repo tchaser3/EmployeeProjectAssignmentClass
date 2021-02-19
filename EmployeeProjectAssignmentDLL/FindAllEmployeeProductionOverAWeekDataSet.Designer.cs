@@ -291,6 +291,8 @@ namespace EmployeeProjectAssignmentDLL {
             
             private global::System.Data.DataColumn columnProjectID;
             
+            private global::System.Data.DataColumn columnCustomerAssignedID;
+            
             private global::System.Data.DataColumn columnAssignedProjectID;
             
             private global::System.Data.DataColumn columnProjectName;
@@ -382,6 +384,14 @@ namespace EmployeeProjectAssignmentDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CustomerAssignedIDColumn {
+                get {
+                    return this.columnCustomerAssignedID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public global::System.Data.DataColumn AssignedProjectIDColumn {
                 get {
                     return this.columnAssignedProjectID;
@@ -449,7 +459,7 @@ namespace EmployeeProjectAssignmentDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindAllEmployeeProductionOverAWeekRow AddFindAllEmployeeProductionOverAWeekRow(int TransactionID, System.DateTime TransactionDate, int EmployeeID, string FirstName, string LastName, int ProjectID, string AssignedProjectID, string ProjectName, decimal TotalHours, decimal PayRate) {
+            public FindAllEmployeeProductionOverAWeekRow AddFindAllEmployeeProductionOverAWeekRow(int TransactionID, System.DateTime TransactionDate, int EmployeeID, string FirstName, string LastName, int ProjectID, string CustomerAssignedID, string AssignedProjectID, string ProjectName, decimal TotalHours, decimal PayRate) {
                 FindAllEmployeeProductionOverAWeekRow rowFindAllEmployeeProductionOverAWeekRow = ((FindAllEmployeeProductionOverAWeekRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         TransactionID,
@@ -458,6 +468,7 @@ namespace EmployeeProjectAssignmentDLL {
                         FirstName,
                         LastName,
                         ProjectID,
+                        CustomerAssignedID,
                         AssignedProjectID,
                         ProjectName,
                         TotalHours,
@@ -497,6 +508,7 @@ namespace EmployeeProjectAssignmentDLL {
                 this.columnFirstName = base.Columns["FirstName"];
                 this.columnLastName = base.Columns["LastName"];
                 this.columnProjectID = base.Columns["ProjectID"];
+                this.columnCustomerAssignedID = base.Columns["CustomerAssignedID"];
                 this.columnAssignedProjectID = base.Columns["AssignedProjectID"];
                 this.columnProjectName = base.Columns["ProjectName"];
                 this.columnTotalHours = base.Columns["TotalHours"];
@@ -518,6 +530,8 @@ namespace EmployeeProjectAssignmentDLL {
                 base.Columns.Add(this.columnLastName);
                 this.columnProjectID = new global::System.Data.DataColumn("ProjectID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnProjectID);
+                this.columnCustomerAssignedID = new global::System.Data.DataColumn("CustomerAssignedID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCustomerAssignedID);
                 this.columnAssignedProjectID = new global::System.Data.DataColumn("AssignedProjectID", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAssignedProjectID);
                 this.columnProjectName = new global::System.Data.DataColumn("ProjectName", typeof(string), null, global::System.Data.MappingType.Element);
@@ -537,6 +551,8 @@ namespace EmployeeProjectAssignmentDLL {
                 this.columnLastName.AllowDBNull = false;
                 this.columnLastName.MaxLength = 2147483647;
                 this.columnProjectID.AllowDBNull = false;
+                this.columnCustomerAssignedID.AllowDBNull = false;
+                this.columnCustomerAssignedID.MaxLength = 2147483647;
                 this.columnAssignedProjectID.AllowDBNull = false;
                 this.columnAssignedProjectID.MaxLength = 2147483647;
                 this.columnProjectName.AllowDBNull = false;
@@ -751,6 +767,17 @@ namespace EmployeeProjectAssignmentDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string CustomerAssignedID {
+                get {
+                    return ((string)(this[this.tableFindAllEmployeeProductionOverAWeek.CustomerAssignedIDColumn]));
+                }
+                set {
+                    this[this.tableFindAllEmployeeProductionOverAWeek.CustomerAssignedIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string AssignedProjectID {
                 get {
                     return ((string)(this[this.tableFindAllEmployeeProductionOverAWeek.AssignedProjectIDColumn]));
@@ -959,6 +986,7 @@ namespace EmployeeProjectAssignmentDLL.FindAllEmployeeProductionOverAWeekDataSet
             tableMapping.ColumnMappings.Add("FirstName", "FirstName");
             tableMapping.ColumnMappings.Add("LastName", "LastName");
             tableMapping.ColumnMappings.Add("ProjectID", "ProjectID");
+            tableMapping.ColumnMappings.Add("CustomerAssignedID", "CustomerAssignedID");
             tableMapping.ColumnMappings.Add("AssignedProjectID", "AssignedProjectID");
             tableMapping.ColumnMappings.Add("ProjectName", "ProjectName");
             tableMapping.ColumnMappings.Add("TotalHours", "TotalHours");
