@@ -109,6 +109,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindProductivityNotCorrectDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindProductivitySheetForVoidingDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindProductivitySheetForVoidingDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindProjectHoursAboveLimitDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -310,6 +315,17 @@
     </None>
     <None Include="FindProductivityNotCorrectDataSet.xss">
       <DependentUpon>FindProductivityNotCorrectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProductivitySheetForVoidingDataSet.xsc">
+      <DependentUpon>FindProductivitySheetForVoidingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProductivitySheetForVoidingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindProductivitySheetForVoidingDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindProductivitySheetForVoidingDataSet.xss">
+      <DependentUpon>FindProductivitySheetForVoidingDataSet.xsd</DependentUpon>
     </None>
     <None Include="FindProjectHoursAboveLimitDataSet.xsc">
       <DependentUpon>FindProjectHoursAboveLimitDataSet.xsd</DependentUpon>

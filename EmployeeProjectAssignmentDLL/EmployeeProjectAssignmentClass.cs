@@ -82,6 +82,24 @@ namespace EmployeeProjectAssignmentDLL
         FindProjectHoursAboveLimitDataSet aFindProjectHoursAboveLimitDataSet;
         FindProjectHoursAboveLimitDataSetTableAdapters.FindProjectHoursAboveLimitTableAdapter aFindProjectHoursAboveLimitTableAdapter;
 
+        FindProductivitySheetForVoidingDataSet aFindProductivitySheetForVoidingDataSet;
+        FindProductivitySheetForVoidingDataSetTableAdapters.FindProductivitySheetForVoidingTableAdapter aFindProductivitySheetForVoidingTableAdapter;
+
+        public FindProductivitySheetForVoidingDataSet FindProductivitySheetForVoiding(int intProjectID, DateTime datTransactionDate)
+        {
+            try
+            {
+                aFindProductivitySheetForVoidingDataSet = new FindProductivitySheetForVoidingDataSet();
+                aFindProductivitySheetForVoidingTableAdapter = new FindProductivitySheetForVoidingDataSetTableAdapters.FindProductivitySheetForVoidingTableAdapter();
+                aFindProductivitySheetForVoidingTableAdapter.Fill(aFindProductivitySheetForVoidingDataSet.FindProductivitySheetForVoiding, intProjectID, datTransactionDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Project Assignment Class // Find Productivity Sheet For Voiding " + Ex.Message);
+            }
+
+            return aFindProductivitySheetForVoidingDataSet;
+        }
         public FindProjectHoursAboveLimitDataSet FindProjectHoursAboveLimit(int intProjectID, DateTime datStartDate, decimal decUpperLimit)
         {
             try
