@@ -85,6 +85,24 @@ namespace EmployeeProjectAssignmentDLL
         FindProductivitySheetForVoidingDataSet aFindProductivitySheetForVoidingDataSet;
         FindProductivitySheetForVoidingDataSetTableAdapters.FindProductivitySheetForVoidingTableAdapter aFindProductivitySheetForVoidingTableAdapter;
 
+        FindDriveTimeForVoidingDataSet aFindDriveTimeForVoidingDataSet;
+        FindDriveTimeForVoidingDataSetTableAdapters.FindDriveTimeForVoidingTableAdapter aFindDriveTimeForVoidingTableAdapter;
+
+        public FindDriveTimeForVoidingDataSet FindDriveTimeForVoiding(DateTime datTransactionDate, int intEmployeeID)
+        {
+            try
+            {
+                aFindDriveTimeForVoidingDataSet = new FindDriveTimeForVoidingDataSet();
+                aFindDriveTimeForVoidingTableAdapter = new FindDriveTimeForVoidingDataSetTableAdapters.FindDriveTimeForVoidingTableAdapter();
+                aFindDriveTimeForVoidingTableAdapter.Fill(aFindDriveTimeForVoidingDataSet.FindDriveTimeForVoiding, datTransactionDate, intEmployeeID);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Project Assignment Class // Find Drive Time For Voiding " + Ex.Message);
+            }
+
+            return aFindDriveTimeForVoidingDataSet;
+        }
         public FindProductivitySheetForVoidingDataSet FindProductivitySheetForVoiding(int intProjectID, DateTime datTransactionDate)
         {
             try
