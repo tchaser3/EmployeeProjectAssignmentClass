@@ -88,6 +88,24 @@ namespace EmployeeProjectAssignmentDLL
         FindDriveTimeForVoidingDataSet aFindDriveTimeForVoidingDataSet;
         FindDriveTimeForVoidingDataSetTableAdapters.FindDriveTimeForVoidingTableAdapter aFindDriveTimeForVoidingTableAdapter;
 
+        FindDetailEmployeeProductivityOverDateRangeDataSet aFindDetailEmployeeProductivityOverDateRangeDataSet;
+        FindDetailEmployeeProductivityOverDateRangeDataSetTableAdapters.FindDetailEmployeeProductivityOverDateRangeTableAdapter aFindDetailEmployeeProductivityOverDateRangeTableAdapter;
+
+        public FindDetailEmployeeProductivityOverDateRangeDataSet FindDetailEmployeeProductivityOverDateRange(int intEmployee, DateTime datStartDate, DateTime datEndDate)
+        {
+            try
+            {
+                aFindDetailEmployeeProductivityOverDateRangeDataSet = new FindDetailEmployeeProductivityOverDateRangeDataSet();
+                aFindDetailEmployeeProductivityOverDateRangeTableAdapter = new FindDetailEmployeeProductivityOverDateRangeDataSetTableAdapters.FindDetailEmployeeProductivityOverDateRangeTableAdapter();
+                aFindDetailEmployeeProductivityOverDateRangeTableAdapter.Fill(aFindDetailEmployeeProductivityOverDateRangeDataSet.FindDetailEmployeeProductivityOverDateRange, intEmployee, datStartDate, datEndDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Project Assignment // Find Detail Employee Productivity Over Date Range " + Ex.Message);
+            }
+
+            return aFindDetailEmployeeProductivityOverDateRangeDataSet;
+        }
         public FindDriveTimeForVoidingDataSet FindDriveTimeForVoiding(DateTime datTransactionDate, int intEmployeeID)
         {
             try
