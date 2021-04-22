@@ -106,13 +106,13 @@ namespace EmployeeProjectAssignmentDLL
 
             return aFindDetailEmployeeProductivityOverDateRangeDataSet;
         }
-        public FindDriveTimeForVoidingDataSet FindDriveTimeForVoiding(DateTime datTransactionDate, int intEmployeeID)
+        public FindDriveTimeForVoidingDataSet FindDriveTimeForVoiding(DateTime datTransactionDate, int intEmployeeID, int intProjectID)
         {
             try
             {
                 aFindDriveTimeForVoidingDataSet = new FindDriveTimeForVoidingDataSet();
                 aFindDriveTimeForVoidingTableAdapter = new FindDriveTimeForVoidingDataSetTableAdapters.FindDriveTimeForVoidingTableAdapter();
-                aFindDriveTimeForVoidingTableAdapter.Fill(aFindDriveTimeForVoidingDataSet.FindDriveTimeForVoiding, datTransactionDate, intEmployeeID);
+                aFindDriveTimeForVoidingTableAdapter.Fill(aFindDriveTimeForVoidingDataSet.FindDriveTimeForVoiding, datTransactionDate, intEmployeeID, intProjectID);
             }
             catch (Exception Ex)
             {
