@@ -79,10 +79,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindEmployeeLaborByTransactionIDDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindEmployeeProductionForMiscCodeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindEmployeeProductionForMiscCodeDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindEmployeeProductionHoursOverPayPeriodDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>FindEmployeeProductionHoursOverPayPeriodDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindEmployeeProductivityMiscTotalHoursDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindEmployeeProductivityMiscTotalHoursDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="FindEmployeeProjectAssignmentByTaskIDDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -260,6 +270,17 @@
     <None Include="FindEmployeeLaborByTransactionIDDataSet.xss">
       <DependentUpon>FindEmployeeLaborByTransactionIDDataSet.xsd</DependentUpon>
     </None>
+    <None Include="FindEmployeeProductionForMiscCodeDataSet.xsc">
+      <DependentUpon>FindEmployeeProductionForMiscCodeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeProductionForMiscCodeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindEmployeeProductionForMiscCodeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindEmployeeProductionForMiscCodeDataSet.xss">
+      <DependentUpon>FindEmployeeProductionForMiscCodeDataSet.xsd</DependentUpon>
+    </None>
     <None Include="FindEmployeeProductionHoursOverPayPeriodDataSet.xsc">
       <DependentUpon>FindEmployeeProductionHoursOverPayPeriodDataSet.xsd</DependentUpon>
     </None>
@@ -270,6 +291,17 @@
     </None>
     <None Include="FindEmployeeProductionHoursOverPayPeriodDataSet.xss">
       <DependentUpon>FindEmployeeProductionHoursOverPayPeriodDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeProductivityMiscTotalHoursDataSet.xsc">
+      <DependentUpon>FindEmployeeProductivityMiscTotalHoursDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeProductivityMiscTotalHoursDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindEmployeeProductivityMiscTotalHoursDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindEmployeeProductivityMiscTotalHoursDataSet.xss">
+      <DependentUpon>FindEmployeeProductivityMiscTotalHoursDataSet.xsd</DependentUpon>
     </None>
     <None Include="FindEmployeeProjectAssignmentByTaskIDDataSet.xsc">
       <DependentUpon>FindEmployeeProjectAssignmentByTaskIDDataSet.xsd</DependentUpon>

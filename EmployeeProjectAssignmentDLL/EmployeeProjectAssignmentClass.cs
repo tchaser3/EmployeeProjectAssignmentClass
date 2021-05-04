@@ -91,6 +91,42 @@ namespace EmployeeProjectAssignmentDLL
         FindDetailEmployeeProductivityOverDateRangeDataSet aFindDetailEmployeeProductivityOverDateRangeDataSet;
         FindDetailEmployeeProductivityOverDateRangeDataSetTableAdapters.FindDetailEmployeeProductivityOverDateRangeTableAdapter aFindDetailEmployeeProductivityOverDateRangeTableAdapter;
 
+        FindEmployeeProductionForMiscCodeDataSet aFindEmployeeProductionForMiscCodeDataSet;
+        FindEmployeeProductionForMiscCodeDataSetTableAdapters.FindEmployeeProductionForMiscCodeTableAdapter aFindEmployeeProductionForMiscCodeTableAdpater;
+
+        FindEmployeeProductivityMiscTotalHoursDataSet aFindEmployeeProductivityMiscTotalhoursDataSet;
+        FindEmployeeProductivityMiscTotalHoursDataSetTableAdapters.FindEmployeeProductivityMiscTotalHoursTableAdapter aFindEmployeeProductivityMiscTotalHoursTableAdpater;
+
+        public FindEmployeeProductivityMiscTotalHoursDataSet FindEmplolyeeProductivityMiscTotalHours()
+        {
+            try
+            {
+                aFindEmployeeProductivityMiscTotalhoursDataSet = new FindEmployeeProductivityMiscTotalHoursDataSet();
+                aFindEmployeeProductivityMiscTotalHoursTableAdpater = new FindEmployeeProductivityMiscTotalHoursDataSetTableAdapters.FindEmployeeProductivityMiscTotalHoursTableAdapter();
+                aFindEmployeeProductivityMiscTotalHoursTableAdpater.Fill(aFindEmployeeProductivityMiscTotalhoursDataSet.FindEmployeeProductivityMiscTotalHours);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Project Assignment // Find Employee Productivity " + Ex.Message); 
+            }
+
+            return aFindEmployeeProductivityMiscTotalhoursDataSet;
+        }
+        public FindEmployeeProductionForMiscCodeDataSet FindEmployeeProductionForMiscCode()
+        {
+            try
+            {
+                aFindEmployeeProductionForMiscCodeDataSet = new FindEmployeeProductionForMiscCodeDataSet();
+                aFindEmployeeProductionForMiscCodeTableAdpater = new FindEmployeeProductionForMiscCodeDataSetTableAdapters.FindEmployeeProductionForMiscCodeTableAdapter();
+                aFindEmployeeProductionForMiscCodeTableAdpater.Fill(aFindEmployeeProductionForMiscCodeDataSet.FindEmployeeProductionForMiscCode);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Project Assignment Class // Find Employee Production For Misc Code " + Ex.Message);
+            }
+
+            return aFindEmployeeProductionForMiscCodeDataSet;
+        }
         public FindDetailEmployeeProductivityOverDateRangeDataSet FindDetailEmployeeProductivityOverDateRange(int intEmployee, DateTime datStartDate, DateTime datEndDate)
         {
             try
