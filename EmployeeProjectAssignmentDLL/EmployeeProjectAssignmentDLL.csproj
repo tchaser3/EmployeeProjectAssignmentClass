@@ -99,6 +99,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindEmployeeProjectAssignmentByTaskIDDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindEmployeeProjectAssignmentDriveTimeHoursDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindEmployeeProjectAssignmentDriveTimeHoursDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindEmployeeProjectAssignmentForComparisonDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindEmployeeProjectAssignmentForComparisonDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindEmployeeProjectAssignmentForProductivityDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindEmployeeProjectAssignmentForProductivityDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindEmployeeProjectHoursOverDateRangeDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -313,6 +328,39 @@
     </None>
     <None Include="FindEmployeeProjectAssignmentByTaskIDDataSet.xss">
       <DependentUpon>FindEmployeeProjectAssignmentByTaskIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeProjectAssignmentDriveTimeHoursDataSet.xsc">
+      <DependentUpon>FindEmployeeProjectAssignmentDriveTimeHoursDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeProjectAssignmentDriveTimeHoursDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindEmployeeProjectAssignmentDriveTimeHoursDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindEmployeeProjectAssignmentDriveTimeHoursDataSet.xss">
+      <DependentUpon>FindEmployeeProjectAssignmentDriveTimeHoursDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeProjectAssignmentForComparisonDataSet.xsc">
+      <DependentUpon>FindEmployeeProjectAssignmentForComparisonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeProjectAssignmentForComparisonDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindEmployeeProjectAssignmentForComparisonDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindEmployeeProjectAssignmentForComparisonDataSet.xss">
+      <DependentUpon>FindEmployeeProjectAssignmentForComparisonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeProjectAssignmentForProductivityDataSet.xsc">
+      <DependentUpon>FindEmployeeProjectAssignmentForProductivityDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeProjectAssignmentForProductivityDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindEmployeeProjectAssignmentForProductivityDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindEmployeeProjectAssignmentForProductivityDataSet.xss">
+      <DependentUpon>FindEmployeeProjectAssignmentForProductivityDataSet.xsd</DependentUpon>
     </None>
     <None Include="FindEmployeeProjectHoursOverDateRangeDataSet.xsc">
       <DependentUpon>FindEmployeeProjectHoursOverDateRangeDataSet.xsd</DependentUpon>

@@ -21,6 +21,7 @@
               </DbSource>
             </MainSource>
             <Mappings>
+              <Mapping SourceColumn="TransactionDate" DataSetColumn="TransactionDate" />
               <Mapping SourceColumn="AssignedProjectID" DataSetColumn="AssignedProjectID" />
               <Mapping SourceColumn="CustomerAssignedID" DataSetColumn="CustomerAssignedID" />
               <Mapping SourceColumn="ProjectName" DataSetColumn="ProjectName" />
@@ -42,6 +43,7 @@
         <xs:element name="FindEmployeeProductionForMiscCode" msprop:Generator_TableClassName="FindEmployeeProductionForMiscCodeDataTable" msprop:Generator_TableVarName="tableFindEmployeeProductionForMiscCode" msprop:Generator_TablePropName="FindEmployeeProductionForMiscCode" msprop:Generator_RowDeletingName="FindEmployeeProductionForMiscCodeRowDeleting" msprop:Generator_RowChangingName="FindEmployeeProductionForMiscCodeRowChanging" msprop:Generator_RowEvHandlerName="FindEmployeeProductionForMiscCodeRowChangeEventHandler" msprop:Generator_RowDeletedName="FindEmployeeProductionForMiscCodeRowDeleted" msprop:Generator_UserTableName="FindEmployeeProductionForMiscCode" msprop:Generator_RowChangedName="FindEmployeeProductionForMiscCodeRowChanged" msprop:Generator_RowEvArgName="FindEmployeeProductionForMiscCodeRowChangeEvent" msprop:Generator_RowClassName="FindEmployeeProductionForMiscCodeRow">
           <xs:complexType>
             <xs:sequence>
+              <xs:element name="TransactionDate" msprop:Generator_ColumnVarNameInTable="columnTransactionDate" msprop:Generator_ColumnPropNameInRow="TransactionDate" msprop:Generator_ColumnPropNameInTable="TransactionDateColumn" msprop:Generator_UserColumnName="TransactionDate" type="xs:dateTime" />
               <xs:element name="AssignedProjectID" msprop:Generator_ColumnVarNameInTable="columnAssignedProjectID" msprop:Generator_ColumnPropNameInRow="AssignedProjectID" msprop:Generator_ColumnPropNameInTable="AssignedProjectIDColumn" msprop:Generator_UserColumnName="AssignedProjectID">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">

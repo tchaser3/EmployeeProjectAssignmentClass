@@ -20,17 +20,17 @@ namespace EmployeeProjectAssignmentDLL {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("FindEmployeeProductionForMiscCodeDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("FindEmployeeProjectAssignmentForComparisonDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class FindEmployeeProductionForMiscCodeDataSet : global::System.Data.DataSet {
+    public partial class FindEmployeeProjectAssignmentForComparisonDataSet : global::System.Data.DataSet {
         
-        private FindEmployeeProductionForMiscCodeDataTable tableFindEmployeeProductionForMiscCode;
+        private FindEmployeeProjectAssignmentforComparisonDataTable tableFindEmployeeProjectAssignmentforComparison;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public FindEmployeeProductionForMiscCodeDataSet() {
+        public FindEmployeeProjectAssignmentForComparisonDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace EmployeeProjectAssignmentDLL {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected FindEmployeeProductionForMiscCodeDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected FindEmployeeProjectAssignmentForComparisonDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace EmployeeProjectAssignmentDLL {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["FindEmployeeProductionForMiscCode"] != null)) {
-                    base.Tables.Add(new FindEmployeeProductionForMiscCodeDataTable(ds.Tables["FindEmployeeProductionForMiscCode"]));
+                if ((ds.Tables["FindEmployeeProjectAssignmentforComparison"] != null)) {
+                    base.Tables.Add(new FindEmployeeProjectAssignmentforComparisonDataTable(ds.Tables["FindEmployeeProjectAssignmentforComparison"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace EmployeeProjectAssignmentDLL {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public FindEmployeeProductionForMiscCodeDataTable FindEmployeeProductionForMiscCode {
+        public FindEmployeeProjectAssignmentforComparisonDataTable FindEmployeeProjectAssignmentforComparison {
             get {
-                return this.tableFindEmployeeProductionForMiscCode;
+                return this.tableFindEmployeeProjectAssignmentforComparison;
             }
         }
         
@@ -127,7 +127,7 @@ namespace EmployeeProjectAssignmentDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            FindEmployeeProductionForMiscCodeDataSet cln = ((FindEmployeeProductionForMiscCodeDataSet)(base.Clone()));
+            FindEmployeeProjectAssignmentForComparisonDataSet cln = ((FindEmployeeProjectAssignmentForComparisonDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace EmployeeProjectAssignmentDLL {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["FindEmployeeProductionForMiscCode"] != null)) {
-                    base.Tables.Add(new FindEmployeeProductionForMiscCodeDataTable(ds.Tables["FindEmployeeProductionForMiscCode"]));
+                if ((ds.Tables["FindEmployeeProjectAssignmentforComparison"] != null)) {
+                    base.Tables.Add(new FindEmployeeProjectAssignmentforComparisonDataTable(ds.Tables["FindEmployeeProjectAssignmentforComparison"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace EmployeeProjectAssignmentDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableFindEmployeeProductionForMiscCode = ((FindEmployeeProductionForMiscCodeDataTable)(base.Tables["FindEmployeeProductionForMiscCode"]));
+            this.tableFindEmployeeProjectAssignmentforComparison = ((FindEmployeeProjectAssignmentforComparisonDataTable)(base.Tables["FindEmployeeProjectAssignmentforComparison"]));
             if ((initTable == true)) {
-                if ((this.tableFindEmployeeProductionForMiscCode != null)) {
-                    this.tableFindEmployeeProductionForMiscCode.InitVars();
+                if ((this.tableFindEmployeeProjectAssignmentforComparison != null)) {
+                    this.tableFindEmployeeProjectAssignmentforComparison.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace EmployeeProjectAssignmentDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "FindEmployeeProductionForMiscCodeDataSet";
+            this.DataSetName = "FindEmployeeProjectAssignmentForComparisonDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/FindEmployeeProductionForMiscCodeDataSet.xsd";
+            this.Namespace = "http://tempuri.org/FindEmployeeProjectAssignmentForComparisonDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableFindEmployeeProductionForMiscCode = new FindEmployeeProductionForMiscCodeDataTable();
-            base.Tables.Add(this.tableFindEmployeeProductionForMiscCode);
+            this.tableFindEmployeeProjectAssignmentforComparison = new FindEmployeeProjectAssignmentforComparisonDataTable();
+            base.Tables.Add(this.tableFindEmployeeProjectAssignmentforComparison);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeFindEmployeeProductionForMiscCode() {
+        private bool ShouldSerializeFindEmployeeProjectAssignmentforComparison() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace EmployeeProjectAssignmentDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            FindEmployeeProductionForMiscCodeDataSet ds = new FindEmployeeProductionForMiscCodeDataSet();
+            FindEmployeeProjectAssignmentForComparisonDataSet ds = new FindEmployeeProjectAssignmentForComparisonDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,35 +270,25 @@ namespace EmployeeProjectAssignmentDLL {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void FindEmployeeProductionForMiscCodeRowChangeEventHandler(object sender, FindEmployeeProductionForMiscCodeRowChangeEvent e);
+        public delegate void FindEmployeeProjectAssignmentforComparisonRowChangeEventHandler(object sender, FindEmployeeProjectAssignmentforComparisonRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class FindEmployeeProductionForMiscCodeDataTable : global::System.Data.TypedTableBase<FindEmployeeProductionForMiscCodeRow> {
+        public partial class FindEmployeeProjectAssignmentforComparisonDataTable : global::System.Data.TypedTableBase<FindEmployeeProjectAssignmentforComparisonRow> {
             
-            private global::System.Data.DataColumn columnTransactionDate;
+            private global::System.Data.DataColumn columnTransactionID;
             
-            private global::System.Data.DataColumn columnAssignedProjectID;
-            
-            private global::System.Data.DataColumn columnCustomerAssignedID;
-            
-            private global::System.Data.DataColumn columnProjectName;
-            
-            private global::System.Data.DataColumn columnFirstName;
-            
-            private global::System.Data.DataColumn columnLastName;
-            
-            private global::System.Data.DataColumn columnHomeOffice;
+            private global::System.Data.DataColumn columnWorkTask;
             
             private global::System.Data.DataColumn columnTotalHours;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindEmployeeProductionForMiscCodeDataTable() {
-                this.TableName = "FindEmployeeProductionForMiscCode";
+            public FindEmployeeProjectAssignmentforComparisonDataTable() {
+                this.TableName = "FindEmployeeProjectAssignmentforComparison";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -306,7 +296,7 @@ namespace EmployeeProjectAssignmentDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal FindEmployeeProductionForMiscCodeDataTable(global::System.Data.DataTable table) {
+            internal FindEmployeeProjectAssignmentforComparisonDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -323,64 +313,24 @@ namespace EmployeeProjectAssignmentDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected FindEmployeeProductionForMiscCodeDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected FindEmployeeProjectAssignmentforComparisonDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn TransactionDateColumn {
+            public global::System.Data.DataColumn TransactionIDColumn {
                 get {
-                    return this.columnTransactionDate;
+                    return this.columnTransactionID;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn AssignedProjectIDColumn {
+            public global::System.Data.DataColumn WorkTaskColumn {
                 get {
-                    return this.columnAssignedProjectID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn CustomerAssignedIDColumn {
-                get {
-                    return this.columnCustomerAssignedID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn ProjectNameColumn {
-                get {
-                    return this.columnProjectName;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn FirstNameColumn {
-                get {
-                    return this.columnFirstName;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn LastNameColumn {
-                get {
-                    return this.columnLastName;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn HomeOfficeColumn {
-                get {
-                    return this.columnHomeOffice;
+                    return this.columnWorkTask;
                 }
             }
             
@@ -403,52 +353,54 @@ namespace EmployeeProjectAssignmentDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindEmployeeProductionForMiscCodeRow this[int index] {
+            public FindEmployeeProjectAssignmentforComparisonRow this[int index] {
                 get {
-                    return ((FindEmployeeProductionForMiscCodeRow)(this.Rows[index]));
+                    return ((FindEmployeeProjectAssignmentforComparisonRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event FindEmployeeProductionForMiscCodeRowChangeEventHandler FindEmployeeProductionForMiscCodeRowChanging;
+            public event FindEmployeeProjectAssignmentforComparisonRowChangeEventHandler FindEmployeeProjectAssignmentforComparisonRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event FindEmployeeProductionForMiscCodeRowChangeEventHandler FindEmployeeProductionForMiscCodeRowChanged;
+            public event FindEmployeeProjectAssignmentforComparisonRowChangeEventHandler FindEmployeeProjectAssignmentforComparisonRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event FindEmployeeProductionForMiscCodeRowChangeEventHandler FindEmployeeProductionForMiscCodeRowDeleting;
+            public event FindEmployeeProjectAssignmentforComparisonRowChangeEventHandler FindEmployeeProjectAssignmentforComparisonRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event FindEmployeeProductionForMiscCodeRowChangeEventHandler FindEmployeeProductionForMiscCodeRowDeleted;
+            public event FindEmployeeProjectAssignmentforComparisonRowChangeEventHandler FindEmployeeProjectAssignmentforComparisonRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddFindEmployeeProductionForMiscCodeRow(FindEmployeeProductionForMiscCodeRow row) {
+            public void AddFindEmployeeProjectAssignmentforComparisonRow(FindEmployeeProjectAssignmentforComparisonRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindEmployeeProductionForMiscCodeRow AddFindEmployeeProductionForMiscCodeRow(System.DateTime TransactionDate, string AssignedProjectID, string CustomerAssignedID, string ProjectName, string FirstName, string LastName, string HomeOffice, decimal TotalHours) {
-                FindEmployeeProductionForMiscCodeRow rowFindEmployeeProductionForMiscCodeRow = ((FindEmployeeProductionForMiscCodeRow)(this.NewRow()));
+            public FindEmployeeProjectAssignmentforComparisonRow AddFindEmployeeProjectAssignmentforComparisonRow(int TransactionID, string WorkTask, decimal TotalHours) {
+                FindEmployeeProjectAssignmentforComparisonRow rowFindEmployeeProjectAssignmentforComparisonRow = ((FindEmployeeProjectAssignmentforComparisonRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        TransactionDate,
-                        AssignedProjectID,
-                        CustomerAssignedID,
-                        ProjectName,
-                        FirstName,
-                        LastName,
-                        HomeOffice,
+                        TransactionID,
+                        WorkTask,
                         TotalHours};
-                rowFindEmployeeProductionForMiscCodeRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowFindEmployeeProductionForMiscCodeRow);
-                return rowFindEmployeeProductionForMiscCodeRow;
+                rowFindEmployeeProjectAssignmentforComparisonRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowFindEmployeeProjectAssignmentforComparisonRow);
+                return rowFindEmployeeProjectAssignmentforComparisonRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public FindEmployeeProjectAssignmentforComparisonRow FindByTransactionID(int TransactionID) {
+                return ((FindEmployeeProjectAssignmentforComparisonRow)(this.Rows.Find(new object[] {
+                            TransactionID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                FindEmployeeProductionForMiscCodeDataTable cln = ((FindEmployeeProductionForMiscCodeDataTable)(base.Clone()));
+                FindEmployeeProjectAssignmentforComparisonDataTable cln = ((FindEmployeeProjectAssignmentforComparisonDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -456,81 +408,59 @@ namespace EmployeeProjectAssignmentDLL {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new FindEmployeeProductionForMiscCodeDataTable();
+                return new FindEmployeeProjectAssignmentforComparisonDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnTransactionDate = base.Columns["TransactionDate"];
-                this.columnAssignedProjectID = base.Columns["AssignedProjectID"];
-                this.columnCustomerAssignedID = base.Columns["CustomerAssignedID"];
-                this.columnProjectName = base.Columns["ProjectName"];
-                this.columnFirstName = base.Columns["FirstName"];
-                this.columnLastName = base.Columns["LastName"];
-                this.columnHomeOffice = base.Columns["HomeOffice"];
+                this.columnTransactionID = base.Columns["TransactionID"];
+                this.columnWorkTask = base.Columns["WorkTask"];
                 this.columnTotalHours = base.Columns["TotalHours"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnTransactionDate = new global::System.Data.DataColumn("TransactionDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTransactionDate);
-                this.columnAssignedProjectID = new global::System.Data.DataColumn("AssignedProjectID", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAssignedProjectID);
-                this.columnCustomerAssignedID = new global::System.Data.DataColumn("CustomerAssignedID", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCustomerAssignedID);
-                this.columnProjectName = new global::System.Data.DataColumn("ProjectName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnProjectName);
-                this.columnFirstName = new global::System.Data.DataColumn("FirstName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFirstName);
-                this.columnLastName = new global::System.Data.DataColumn("LastName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnLastName);
-                this.columnHomeOffice = new global::System.Data.DataColumn("HomeOffice", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnHomeOffice);
+                this.columnTransactionID = new global::System.Data.DataColumn("TransactionID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTransactionID);
+                this.columnWorkTask = new global::System.Data.DataColumn("WorkTask", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWorkTask);
                 this.columnTotalHours = new global::System.Data.DataColumn("TotalHours", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTotalHours);
-                this.columnTransactionDate.AllowDBNull = false;
-                this.columnAssignedProjectID.AllowDBNull = false;
-                this.columnAssignedProjectID.MaxLength = 2147483647;
-                this.columnCustomerAssignedID.AllowDBNull = false;
-                this.columnCustomerAssignedID.MaxLength = 2147483647;
-                this.columnProjectName.AllowDBNull = false;
-                this.columnProjectName.MaxLength = 2147483647;
-                this.columnFirstName.AllowDBNull = false;
-                this.columnFirstName.MaxLength = 2147483647;
-                this.columnLastName.AllowDBNull = false;
-                this.columnLastName.MaxLength = 2147483647;
-                this.columnHomeOffice.AllowDBNull = false;
-                this.columnHomeOffice.MaxLength = 2147483647;
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnTransactionID}, true));
+                this.columnTransactionID.AllowDBNull = false;
+                this.columnTransactionID.Unique = true;
+                this.columnWorkTask.AllowDBNull = false;
+                this.columnWorkTask.MaxLength = 2147483647;
                 this.columnTotalHours.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindEmployeeProductionForMiscCodeRow NewFindEmployeeProductionForMiscCodeRow() {
-                return ((FindEmployeeProductionForMiscCodeRow)(this.NewRow()));
+            public FindEmployeeProjectAssignmentforComparisonRow NewFindEmployeeProjectAssignmentforComparisonRow() {
+                return ((FindEmployeeProjectAssignmentforComparisonRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new FindEmployeeProductionForMiscCodeRow(builder);
+                return new FindEmployeeProjectAssignmentforComparisonRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(FindEmployeeProductionForMiscCodeRow);
+                return typeof(FindEmployeeProjectAssignmentforComparisonRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.FindEmployeeProductionForMiscCodeRowChanged != null)) {
-                    this.FindEmployeeProductionForMiscCodeRowChanged(this, new FindEmployeeProductionForMiscCodeRowChangeEvent(((FindEmployeeProductionForMiscCodeRow)(e.Row)), e.Action));
+                if ((this.FindEmployeeProjectAssignmentforComparisonRowChanged != null)) {
+                    this.FindEmployeeProjectAssignmentforComparisonRowChanged(this, new FindEmployeeProjectAssignmentforComparisonRowChangeEvent(((FindEmployeeProjectAssignmentforComparisonRow)(e.Row)), e.Action));
                 }
             }
             
@@ -538,8 +468,8 @@ namespace EmployeeProjectAssignmentDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.FindEmployeeProductionForMiscCodeRowChanging != null)) {
-                    this.FindEmployeeProductionForMiscCodeRowChanging(this, new FindEmployeeProductionForMiscCodeRowChangeEvent(((FindEmployeeProductionForMiscCodeRow)(e.Row)), e.Action));
+                if ((this.FindEmployeeProjectAssignmentforComparisonRowChanging != null)) {
+                    this.FindEmployeeProjectAssignmentforComparisonRowChanging(this, new FindEmployeeProjectAssignmentforComparisonRowChangeEvent(((FindEmployeeProjectAssignmentforComparisonRow)(e.Row)), e.Action));
                 }
             }
             
@@ -547,8 +477,8 @@ namespace EmployeeProjectAssignmentDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.FindEmployeeProductionForMiscCodeRowDeleted != null)) {
-                    this.FindEmployeeProductionForMiscCodeRowDeleted(this, new FindEmployeeProductionForMiscCodeRowChangeEvent(((FindEmployeeProductionForMiscCodeRow)(e.Row)), e.Action));
+                if ((this.FindEmployeeProjectAssignmentforComparisonRowDeleted != null)) {
+                    this.FindEmployeeProjectAssignmentforComparisonRowDeleted(this, new FindEmployeeProjectAssignmentforComparisonRowChangeEvent(((FindEmployeeProjectAssignmentforComparisonRow)(e.Row)), e.Action));
                 }
             }
             
@@ -556,14 +486,14 @@ namespace EmployeeProjectAssignmentDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.FindEmployeeProductionForMiscCodeRowDeleting != null)) {
-                    this.FindEmployeeProductionForMiscCodeRowDeleting(this, new FindEmployeeProductionForMiscCodeRowChangeEvent(((FindEmployeeProductionForMiscCodeRow)(e.Row)), e.Action));
+                if ((this.FindEmployeeProjectAssignmentforComparisonRowDeleting != null)) {
+                    this.FindEmployeeProjectAssignmentforComparisonRowDeleting(this, new FindEmployeeProjectAssignmentforComparisonRowChangeEvent(((FindEmployeeProjectAssignmentforComparisonRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveFindEmployeeProductionForMiscCodeRow(FindEmployeeProductionForMiscCodeRow row) {
+            public void RemoveFindEmployeeProjectAssignmentforComparisonRow(FindEmployeeProjectAssignmentforComparisonRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -572,7 +502,7 @@ namespace EmployeeProjectAssignmentDLL {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                FindEmployeeProductionForMiscCodeDataSet ds = new FindEmployeeProductionForMiscCodeDataSet();
+                FindEmployeeProjectAssignmentForComparisonDataSet ds = new FindEmployeeProjectAssignmentForComparisonDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -590,7 +520,7 @@ namespace EmployeeProjectAssignmentDLL {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "FindEmployeeProductionForMiscCodeDataTable";
+                attribute2.FixedValue = "FindEmployeeProjectAssignmentforComparisonDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -634,91 +564,36 @@ namespace EmployeeProjectAssignmentDLL {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class FindEmployeeProductionForMiscCodeRow : global::System.Data.DataRow {
+        public partial class FindEmployeeProjectAssignmentforComparisonRow : global::System.Data.DataRow {
             
-            private FindEmployeeProductionForMiscCodeDataTable tableFindEmployeeProductionForMiscCode;
+            private FindEmployeeProjectAssignmentforComparisonDataTable tableFindEmployeeProjectAssignmentforComparison;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal FindEmployeeProductionForMiscCodeRow(global::System.Data.DataRowBuilder rb) : 
+            internal FindEmployeeProjectAssignmentforComparisonRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableFindEmployeeProductionForMiscCode = ((FindEmployeeProductionForMiscCodeDataTable)(this.Table));
+                this.tableFindEmployeeProjectAssignmentforComparison = ((FindEmployeeProjectAssignmentforComparisonDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public System.DateTime TransactionDate {
+            public int TransactionID {
                 get {
-                    return ((global::System.DateTime)(this[this.tableFindEmployeeProductionForMiscCode.TransactionDateColumn]));
+                    return ((int)(this[this.tableFindEmployeeProjectAssignmentforComparison.TransactionIDColumn]));
                 }
                 set {
-                    this[this.tableFindEmployeeProductionForMiscCode.TransactionDateColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string AssignedProjectID {
-                get {
-                    return ((string)(this[this.tableFindEmployeeProductionForMiscCode.AssignedProjectIDColumn]));
-                }
-                set {
-                    this[this.tableFindEmployeeProductionForMiscCode.AssignedProjectIDColumn] = value;
+                    this[this.tableFindEmployeeProjectAssignmentforComparison.TransactionIDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string CustomerAssignedID {
+            public string WorkTask {
                 get {
-                    return ((string)(this[this.tableFindEmployeeProductionForMiscCode.CustomerAssignedIDColumn]));
+                    return ((string)(this[this.tableFindEmployeeProjectAssignmentforComparison.WorkTaskColumn]));
                 }
                 set {
-                    this[this.tableFindEmployeeProductionForMiscCode.CustomerAssignedIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string ProjectName {
-                get {
-                    return ((string)(this[this.tableFindEmployeeProductionForMiscCode.ProjectNameColumn]));
-                }
-                set {
-                    this[this.tableFindEmployeeProductionForMiscCode.ProjectNameColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string FirstName {
-                get {
-                    return ((string)(this[this.tableFindEmployeeProductionForMiscCode.FirstNameColumn]));
-                }
-                set {
-                    this[this.tableFindEmployeeProductionForMiscCode.FirstNameColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string LastName {
-                get {
-                    return ((string)(this[this.tableFindEmployeeProductionForMiscCode.LastNameColumn]));
-                }
-                set {
-                    this[this.tableFindEmployeeProductionForMiscCode.LastNameColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string HomeOffice {
-                get {
-                    return ((string)(this[this.tableFindEmployeeProductionForMiscCode.HomeOfficeColumn]));
-                }
-                set {
-                    this[this.tableFindEmployeeProductionForMiscCode.HomeOfficeColumn] = value;
+                    this[this.tableFindEmployeeProjectAssignmentforComparison.WorkTaskColumn] = value;
                 }
             }
             
@@ -726,10 +601,10 @@ namespace EmployeeProjectAssignmentDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public decimal TotalHours {
                 get {
-                    return ((decimal)(this[this.tableFindEmployeeProductionForMiscCode.TotalHoursColumn]));
+                    return ((decimal)(this[this.tableFindEmployeeProjectAssignmentforComparison.TotalHoursColumn]));
                 }
                 set {
-                    this[this.tableFindEmployeeProductionForMiscCode.TotalHoursColumn] = value;
+                    this[this.tableFindEmployeeProjectAssignmentforComparison.TotalHoursColumn] = value;
                 }
             }
         }
@@ -738,22 +613,22 @@ namespace EmployeeProjectAssignmentDLL {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class FindEmployeeProductionForMiscCodeRowChangeEvent : global::System.EventArgs {
+        public class FindEmployeeProjectAssignmentforComparisonRowChangeEvent : global::System.EventArgs {
             
-            private FindEmployeeProductionForMiscCodeRow eventRow;
+            private FindEmployeeProjectAssignmentforComparisonRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindEmployeeProductionForMiscCodeRowChangeEvent(FindEmployeeProductionForMiscCodeRow row, global::System.Data.DataRowAction action) {
+            public FindEmployeeProjectAssignmentforComparisonRowChangeEvent(FindEmployeeProjectAssignmentforComparisonRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindEmployeeProductionForMiscCodeRow Row {
+            public FindEmployeeProjectAssignmentforComparisonRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -769,7 +644,7 @@ namespace EmployeeProjectAssignmentDLL {
         }
     }
 }
-namespace EmployeeProjectAssignmentDLL.FindEmployeeProductionForMiscCodeDataSetTableAdapters {
+namespace EmployeeProjectAssignmentDLL.FindEmployeeProjectAssignmentForComparisonDataSetTableAdapters {
     
     
     /// <summary>
@@ -781,7 +656,7 @@ namespace EmployeeProjectAssignmentDLL.FindEmployeeProductionForMiscCodeDataSetT
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class FindEmployeeProductionForMiscCodeTableAdapter : global::System.ComponentModel.Component {
+    public partial class FindEmployeeProjectAssignmentforComparisonTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -795,7 +670,7 @@ namespace EmployeeProjectAssignmentDLL.FindEmployeeProductionForMiscCodeDataSetT
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public FindEmployeeProductionForMiscCodeTableAdapter() {
+        public FindEmployeeProjectAssignmentforComparisonTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -892,14 +767,9 @@ namespace EmployeeProjectAssignmentDLL.FindEmployeeProductionForMiscCodeDataSetT
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "FindEmployeeProductionForMiscCode";
-            tableMapping.ColumnMappings.Add("TransactionDate", "TransactionDate");
-            tableMapping.ColumnMappings.Add("AssignedProjectID", "AssignedProjectID");
-            tableMapping.ColumnMappings.Add("CustomerAssignedID", "CustomerAssignedID");
-            tableMapping.ColumnMappings.Add("ProjectName", "ProjectName");
-            tableMapping.ColumnMappings.Add("FirstName", "FirstName");
-            tableMapping.ColumnMappings.Add("LastName", "LastName");
-            tableMapping.ColumnMappings.Add("HomeOffice", "HomeOffice");
+            tableMapping.DataSetTable = "FindEmployeeProjectAssignmentforComparison";
+            tableMapping.ColumnMappings.Add("TransactionID", "TransactionID");
+            tableMapping.ColumnMappings.Add("WorkTask", "WorkTask");
             tableMapping.ColumnMappings.Add("TotalHours", "TotalHours");
             this._adapter.TableMappings.Add(tableMapping);
         }
@@ -917,17 +787,38 @@ namespace EmployeeProjectAssignmentDLL.FindEmployeeProductionForMiscCodeDataSetT
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.FindEmployeeProductionForMiscCode";
+            this._commandCollection[0].CommandText = "dbo.FindEmployeeProjectAssignmentforComparison";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EmployeeID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProjectID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TransactionDate", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(FindEmployeeProductionForMiscCodeDataSet.FindEmployeeProductionForMiscCodeDataTable dataTable) {
+        public virtual int Fill(FindEmployeeProjectAssignmentForComparisonDataSet.FindEmployeeProjectAssignmentforComparisonDataTable dataTable, global::System.Nullable<int> EmployeeID, global::System.Nullable<int> ProjectID, global::System.Nullable<global::System.DateTime> TransactionDate) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((EmployeeID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(EmployeeID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((ProjectID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((int)(ProjectID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((TransactionDate.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((System.DateTime)(TransactionDate.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -939,9 +830,27 @@ namespace EmployeeProjectAssignmentDLL.FindEmployeeProductionForMiscCodeDataSetT
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual FindEmployeeProductionForMiscCodeDataSet.FindEmployeeProductionForMiscCodeDataTable GetData() {
+        public virtual FindEmployeeProjectAssignmentForComparisonDataSet.FindEmployeeProjectAssignmentforComparisonDataTable GetData(global::System.Nullable<int> EmployeeID, global::System.Nullable<int> ProjectID, global::System.Nullable<global::System.DateTime> TransactionDate) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            FindEmployeeProductionForMiscCodeDataSet.FindEmployeeProductionForMiscCodeDataTable dataTable = new FindEmployeeProductionForMiscCodeDataSet.FindEmployeeProductionForMiscCodeDataTable();
+            if ((EmployeeID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(EmployeeID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((ProjectID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((int)(ProjectID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((TransactionDate.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((System.DateTime)(TransactionDate.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            FindEmployeeProjectAssignmentForComparisonDataSet.FindEmployeeProjectAssignmentforComparisonDataTable dataTable = new FindEmployeeProjectAssignmentForComparisonDataSet.FindEmployeeProjectAssignmentforComparisonDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1015,7 +924,7 @@ namespace EmployeeProjectAssignmentDLL.FindEmployeeProductionForMiscCodeDataSetT
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(FindEmployeeProductionForMiscCodeDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(FindEmployeeProjectAssignmentForComparisonDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1025,7 +934,7 @@ namespace EmployeeProjectAssignmentDLL.FindEmployeeProductionForMiscCodeDataSetT
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(FindEmployeeProductionForMiscCodeDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(FindEmployeeProjectAssignmentForComparisonDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1035,7 +944,7 @@ namespace EmployeeProjectAssignmentDLL.FindEmployeeProductionForMiscCodeDataSetT
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(FindEmployeeProductionForMiscCodeDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(FindEmployeeProjectAssignmentForComparisonDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -1069,7 +978,7 @@ namespace EmployeeProjectAssignmentDLL.FindEmployeeProductionForMiscCodeDataSetT
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(FindEmployeeProductionForMiscCodeDataSet dataSet) {
+        public virtual int UpdateAll(FindEmployeeProjectAssignmentForComparisonDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

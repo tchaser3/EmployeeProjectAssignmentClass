@@ -97,6 +97,60 @@ namespace EmployeeProjectAssignmentDLL
         FindEmployeeProductivityMiscTotalHoursDataSet aFindEmployeeProductivityMiscTotalhoursDataSet;
         FindEmployeeProductivityMiscTotalHoursDataSetTableAdapters.FindEmployeeProductivityMiscTotalHoursTableAdapter aFindEmployeeProductivityMiscTotalHoursTableAdpater;
 
+        FindEmployeeProjectAssignmentDriveTimeHoursDataSet aFindEmployeeProjectAssignmentDriveTimeHoursDataSet;
+        FindEmployeeProjectAssignmentDriveTimeHoursDataSetTableAdapters.FindEmployeeProjectAssignmentDriveTimeHoursTableAdapter aFindEmployeeProjectAssignmentDriveTimeHoursTableAdapter;
+
+        FindEmployeeProjectAssignmentForComparisonDataSet aFindEmployeeProjectAssignmentForComparisonDataSet;
+        FindEmployeeProjectAssignmentForComparisonDataSetTableAdapters.FindEmployeeProjectAssignmentforComparisonTableAdapter aFindEmployeeProjectAssignmentForComparisonTableAdapter;
+
+        FindEmployeeProjectAssignmentForProductivityDataSet aFindEmployeeProjectAssignmentForProductivityDataSet;
+        FindEmployeeProjectAssignmentForProductivityDataSetTableAdapters.FindEmployeeProjectAssignmentForProductivityTableAdapter aFindEmployeeProjectAssignmentForProductivityTableAdapter;
+
+        public FindEmployeeProjectAssignmentForProductivityDataSet FindEmployeeProjectAssignmentForProductivity(int intEmployeeID, int intProjectID, int intWorkTaskID, DateTime datTransactionDate)
+        {
+            try
+            {
+                aFindEmployeeProjectAssignmentForProductivityDataSet = new FindEmployeeProjectAssignmentForProductivityDataSet();
+                aFindEmployeeProjectAssignmentForProductivityTableAdapter = new FindEmployeeProjectAssignmentForProductivityDataSetTableAdapters.FindEmployeeProjectAssignmentForProductivityTableAdapter();
+                aFindEmployeeProjectAssignmentForProductivityTableAdapter.Fill(aFindEmployeeProjectAssignmentForProductivityDataSet.FindEmployeeProjectAssignmentForProductivity, intEmployeeID, intProjectID, intWorkTaskID, datTransactionDate);
+            }
+            catch(Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Project Assignment Class // Find Employee Project Assignment For Productivity " + Ex.Message);
+            }
+
+            return aFindEmployeeProjectAssignmentForProductivityDataSet;
+        }
+        public FindEmployeeProjectAssignmentForComparisonDataSet FindEmployeeProjectAssignmentForComparison(int intEmployeeID, int intProjectID, DateTime datTransactionDate)
+        {
+            try
+            {
+                aFindEmployeeProjectAssignmentForComparisonDataSet = new FindEmployeeProjectAssignmentForComparisonDataSet();
+                aFindEmployeeProjectAssignmentForComparisonTableAdapter = new FindEmployeeProjectAssignmentForComparisonDataSetTableAdapters.FindEmployeeProjectAssignmentforComparisonTableAdapter();
+                aFindEmployeeProjectAssignmentForComparisonTableAdapter.Fill(aFindEmployeeProjectAssignmentForComparisonDataSet.FindEmployeeProjectAssignmentforComparison, intEmployeeID, intProjectID, datTransactionDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Project Assignment // Find Employee Project Assignment For Comparison " + Ex.Message);
+            }
+
+            return aFindEmployeeProjectAssignmentForComparisonDataSet;
+        }
+        public FindEmployeeProjectAssignmentDriveTimeHoursDataSet FindEmployeeProjectAssignmentDriveTimeHours()
+        {
+            try
+            {
+                aFindEmployeeProjectAssignmentDriveTimeHoursDataSet = new FindEmployeeProjectAssignmentDriveTimeHoursDataSet();
+                aFindEmployeeProjectAssignmentDriveTimeHoursTableAdapter = new FindEmployeeProjectAssignmentDriveTimeHoursDataSetTableAdapters.FindEmployeeProjectAssignmentDriveTimeHoursTableAdapter();
+                aFindEmployeeProjectAssignmentDriveTimeHoursTableAdapter.Fill(aFindEmployeeProjectAssignmentDriveTimeHoursDataSet.FindEmployeeProjectAssignmentDriveTimeHours);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Project Assignment Class // Find Employee Project Assignment Drive Time Hours " + Ex.Message);
+            }
+
+            return aFindEmployeeProjectAssignmentDriveTimeHoursDataSet;
+        }
         public FindEmployeeProductivityMiscTotalHoursDataSet FindEmplolyeeProductivityMiscTotalHours()
         {
             try
