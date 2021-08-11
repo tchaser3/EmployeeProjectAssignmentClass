@@ -114,6 +114,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindEmployeeProjectAssignmentForProductivityDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindEmployeeProjectAssignmentForVoidingDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindEmployeeProjectAssignmentForVoidingDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindEmployeeProjectHoursOverDateRangeDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -361,6 +366,17 @@
     </None>
     <None Include="FindEmployeeProjectAssignmentForProductivityDataSet.xss">
       <DependentUpon>FindEmployeeProjectAssignmentForProductivityDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeProjectAssignmentForVoidingDataSet.xsc">
+      <DependentUpon>FindEmployeeProjectAssignmentForVoidingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeProjectAssignmentForVoidingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindEmployeeProjectAssignmentForVoidingDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindEmployeeProjectAssignmentForVoidingDataSet.xss">
+      <DependentUpon>FindEmployeeProjectAssignmentForVoidingDataSet.xsd</DependentUpon>
     </None>
     <None Include="FindEmployeeProjectHoursOverDateRangeDataSet.xsc">
       <DependentUpon>FindEmployeeProjectHoursOverDateRangeDataSet.xsd</DependentUpon>

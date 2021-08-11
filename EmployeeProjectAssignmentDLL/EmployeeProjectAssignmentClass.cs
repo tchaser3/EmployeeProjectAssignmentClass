@@ -106,6 +106,24 @@ namespace EmployeeProjectAssignmentDLL
         FindEmployeeProjectAssignmentForProductivityDataSet aFindEmployeeProjectAssignmentForProductivityDataSet;
         FindEmployeeProjectAssignmentForProductivityDataSetTableAdapters.FindEmployeeProjectAssignmentForProductivityTableAdapter aFindEmployeeProjectAssignmentForProductivityTableAdapter;
 
+        FindEmployeeProjectAssignmentForVoidingDataSet aFindEmployeeProjectAssignmentForVoidingDataSet;
+        FindEmployeeProjectAssignmentForVoidingDataSetTableAdapters.FindEmployeeProjectAssignmentForVoidingTableAdapter aFindEmployeeProjectAssignmentForVoidingTableAdapter;
+
+        public FindEmployeeProjectAssignmentForVoidingDataSet FindEmployeeProjectAssignmentForVoiding(int intEmployeeID, DateTime datTransactionDate)
+        {
+            try
+            {
+                aFindEmployeeProjectAssignmentForVoidingDataSet = new FindEmployeeProjectAssignmentForVoidingDataSet();
+                aFindEmployeeProjectAssignmentForVoidingTableAdapter = new FindEmployeeProjectAssignmentForVoidingDataSetTableAdapters.FindEmployeeProjectAssignmentForVoidingTableAdapter();
+                aFindEmployeeProjectAssignmentForVoidingTableAdapter.Fill(aFindEmployeeProjectAssignmentForVoidingDataSet.FindEmployeeProjectAssignmentForVoiding, intEmployeeID, datTransactionDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Project Assignment Class // Find EmployeeProjectAssignmentForVoiding " + Ex.Message);
+            }
+
+            return aFindEmployeeProjectAssignmentForVoidingDataSet;
+        }
         public FindEmployeeProjectAssignmentForProductivityDataSet FindEmployeeProjectAssignmentForProductivity(int intEmployeeID, int intProjectID, int intWorkTaskID, DateTime datTransactionDate)
         {
             try
