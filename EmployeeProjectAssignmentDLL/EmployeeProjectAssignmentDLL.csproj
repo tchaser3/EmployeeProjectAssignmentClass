@@ -180,6 +180,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindProjectProductionByAssignedProjectIDDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindProjectProductionCostsByProjectIDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindProjectProductionCostsByProjectIDDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="InsertEmployeeProjectAssignmentEntry.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -515,6 +520,17 @@
     </None>
     <None Include="FindProjectProductionByAssignedProjectIDDataSet.xss">
       <DependentUpon>FindProjectProductionByAssignedProjectIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProjectProductionCostsByProjectIDDataSet.xsc">
+      <DependentUpon>FindProjectProductionCostsByProjectIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProjectProductionCostsByProjectIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindProjectProductionCostsByProjectIDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindProjectProductionCostsByProjectIDDataSet.xss">
+      <DependentUpon>FindProjectProductionCostsByProjectIDDataSet.xsd</DependentUpon>
     </None>
     <None Include="InsertEmployeeProjectAssignmentEntry.xsc">
       <DependentUpon>InsertEmployeeProjectAssignmentEntry.xsd</DependentUpon>
