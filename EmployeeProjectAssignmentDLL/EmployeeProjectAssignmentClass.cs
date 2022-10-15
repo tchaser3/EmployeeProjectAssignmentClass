@@ -115,6 +115,24 @@ namespace EmployeeProjectAssignmentDLL
         FindProjectProductionCostsByProjectIDDataSet aFindProjectProductionCostsByProjectIDDataSet;
         FindProjectProductionCostsByProjectIDDataSetTableAdapters.FindProjectProductionCostsByProjectIDTableAdapter aFindProjectProductionCostsByProjectIDTableAdapter;
 
+        FindProjectProductivityDataSet aFindProjectProductivityDataSet;
+        FindProjectProductivityDataSetTableAdapters.FindProjectProductivityTableAdapter aFindProjectProductivityTableAdapter;
+
+        public FindProjectProductivityDataSet FindProjectProductivity(int intProjectID)
+        {
+            try
+            {
+                aFindProjectProductivityDataSet = new FindProjectProductivityDataSet();
+                aFindProjectProductivityTableAdapter = new FindProjectProductivityDataSetTableAdapters.FindProjectProductivityTableAdapter();
+                aFindProjectProductivityTableAdapter.Fill(aFindProjectProductivityDataSet.FindProjectProductivity, intProjectID);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Project Assignment Class // Find Project Productivity Class " + Ex.ToString());
+            }
+
+            return aFindProjectProductivityDataSet;
+        }
         public FindProjectProductionCostsByProjectIDDataSet FindProjectProductionCostsByProjectID(int intProjectID)
         {
             try
