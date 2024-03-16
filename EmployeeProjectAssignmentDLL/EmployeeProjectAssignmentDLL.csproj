@@ -105,6 +105,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindEmployeeProjectAssignmentDriveTimeHoursDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindEmployeeProjectAssignmentForAllDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindEmployeeProjectAssignmentForAllDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindEmployeeProjectAssignmentForComparisonDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -360,6 +365,17 @@
     </None>
     <None Include="FindEmployeeProjectAssignmentDriveTimeHoursDataSet.xss">
       <DependentUpon>FindEmployeeProjectAssignmentDriveTimeHoursDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeProjectAssignmentForAllDataSet.xsc">
+      <DependentUpon>FindEmployeeProjectAssignmentForAllDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindEmployeeProjectAssignmentForAllDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindEmployeeProjectAssignmentForAllDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindEmployeeProjectAssignmentForAllDataSet.xss">
+      <DependentUpon>FindEmployeeProjectAssignmentForAllDataSet.xsd</DependentUpon>
     </None>
     <None Include="FindEmployeeProjectAssignmentForComparisonDataSet.xsc">
       <DependentUpon>FindEmployeeProjectAssignmentForComparisonDataSet.xsd</DependentUpon>

@@ -118,6 +118,24 @@ namespace EmployeeProjectAssignmentDLL
         FindProjectProductivityDataSet aFindProjectProductivityDataSet;
         FindProjectProductivityDataSetTableAdapters.FindProjectProductivityTableAdapter aFindProjectProductivityTableAdapter;
 
+        FindEmployeeProjectAssignmentForAllDataSet aFindEmployeeProjectAssignmentForAllDataSet;
+        FindEmployeeProjectAssignmentForAllDataSetTableAdapters.FindEmployeeProjectAssignmentForAllTableAdapter aFindEmployeeProjectAssignmentForAllTableAdapter;
+
+        public FindEmployeeProjectAssignmentForAllDataSet FindEmployeeProjectAssignmentForAll(DateTime datStartDate, DateTime datEndDate)
+        {
+            try
+            {
+                aFindEmployeeProjectAssignmentForAllDataSet = new FindEmployeeProjectAssignmentForAllDataSet();
+                aFindEmployeeProjectAssignmentForAllTableAdapter = new FindEmployeeProjectAssignmentForAllDataSetTableAdapters.FindEmployeeProjectAssignmentForAllTableAdapter();
+                aFindEmployeeProjectAssignmentForAllTableAdapter.Fill(aFindEmployeeProjectAssignmentForAllDataSet.FindEmployeeProjectAssignmentForAll, datStartDate, datEndDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Employee Project Assignment Class // Find Employee Project Assignment For All " + Ex.ToString());
+            }
+
+            return aFindEmployeeProjectAssignmentForAllDataSet;
+        }
         public FindProjectProductivityDataSet FindProjectProductivity(int intProjectID)
         {
             try
